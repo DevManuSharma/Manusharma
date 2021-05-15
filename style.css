@@ -1,0 +1,740 @@
+*{
+    margin: 0; padding:0; box-sizing: border-box;
+}
+
+#loading{
+
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(2, 2, 63);
+    z-index: 99999;
+    color: white;
+    
+    
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+body{
+    color: rgb(0, 0, 0);
+    
+    
+}
+
+
+
+
+.header{
+    
+    background: #ffffff;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+    
+
+}
+nav{display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: fixed;
+    box-shadow: 2px 2px 2px 2px blue;
+    background-color: white;
+}
+
+#logo{
+    margin-left: 40px;
+    color: rgb(2, 2, 75);
+    margin-right: 750px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+a#a{
+    font-size: 18px;
+    color:rgb(2, 2, 75);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    width:100px;
+    position:relative;
+    padding-bottom: 5px;
+    
+}
+a#a:before{
+    content: "";
+    position:absolute;
+    
+    width: 0;
+    height: 2.5px;
+    bottom: 2px;
+    left: 0;
+    background:linear-gradient(90deg, yellow,rgb(2, 2, 75), white);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a#a:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+a#active{
+
+    color: silver;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor:default;
+    width: 100px;
+    font-size: 18px;
+}
+
+
+.homeview{
+       background:url('');
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 680px;
+
+}
+
+.wrapper{
+    display: flex;
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+  .wrapper .static-txt{
+    color: rgb(27, 27, 134);
+    font-size: 70px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #991313;
+    font-size: 56px;
+    text-shadow: 0 0 2.2 yellow;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    line-height: 90px;
+    text-align: center;
+    justify-content: center;
+   
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    border-left: 2px solid #770707;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+  
+  .home-buttons{
+
+    margin-left: 200px;
+    margin-top: 100px;
+  }
+
+button#join-us {
+    
+    outline: none;
+    background: blue;
+    font-size: 30px;
+    border: none;
+    color: white;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 35px;
+    box-shadow:   0px 0px 10px 2px rgb(82, 82, 255)
+}
+
+button#join-us:hover{
+    box-shadow:0px 0px 10px 2px rgb(4, 4, 75) ;
+}
+
+button#grow-with-us{
+
+    outline: none;
+    background: green;
+    font-size: 30px;
+    border: none;
+    color: white;
+    width: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 35px;
+    box-shadow:   0px 0px 10px 2px rgb(2, 156, 2);
+
+}
+
+button#grow-with-us:hover{
+    box-shadow:   0px 0px 10px 2px rgb(2, 65, 2);
+}
+
+
+.Home-para{
+    margin-top: 100px;
+    margin-left: 120px;
+}
+
+.Home-para p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: rgb(8, 8, 99);
+    margin-top: 10px;
+}
+ .h-container{
+     padding-top: 100px;
+     margin-left: 45px;
+     height: 630px;
+     display: flex;
+     flex-direction: row;
+     position: relative;
+     
+     
+ }
+ .h-container h2{
+
+    
+    color: rgb(2, 2, 75);
+    
+ }
+
+ .h-container h2 span {
+
+    animation: homeanimation 1.0s infinite;
+
+
+ }
+
+ @keyframes homeanimation {
+
+    0%{
+        content: "Developer";
+        color: red;
+        
+    }
+     
+ }
+
+h3#name{
+    font-family:  'Permanent Marker', cursive;
+    font-size: 40px;
+    color:rgb(20, 8, 53) ;
+    text-shadow: 1px 1px 0px rgb(185, 161, 161);
+    animation: welcome .9s linear;
+}
+@keyframes welcome {
+
+    0%{
+        margin-left: 0px;
+    }
+
+    100%{margin-left: 10px;}
+    
+}
+
+h4#belowname{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h-container img{
+ margin-left: 200px;
+}
+
+snap#dr{
+    font-size: 25px;
+}
+
+snap#back{
+     margin-left: 100px;
+    color: darkred;
+}
+ 
+/*----------------------------HRline area------------------------------/*/ 
+
+#hr1{
+    
+    margin-right: 350px;
+    height: 10px;
+    border-top-right-radius: 100px;
+}
+#hr3{
+    
+    margin-left: 350px;
+    height: 10px;
+    border-bottom-left-radius: 100px;
+}
+/*---------------------------------/*Quote home*------------------------------------/*/
+
+
+
+
+.quote-container{
+    margin-left: 450px;
+    margin-top: 80px;
+    background-color: rgb(243, 194, 228);
+    height: 120px;
+    width: 600px;
+    box-shadow: 0px 0px 10px rgb(3, 3, 34);
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    animation: bgcolor infinite 2.0s;
+    border: 2px white solid;
+}
+
+
+.quote-holder{
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+/*@keyframes bgcolor{
+    0%{
+        background: palegoldenrod;
+        border-bottom: rgb(20, 8, 53) 5px solid;
+    }
+    10%{
+        background: rgb(214, 202, 206);
+        border-right: rgb(20, 8, 53) 5px solid;
+    }
+    20%{
+        background: rgb(240, 231, 234);
+        border-top: rgb(20, 8, 53) 5px solid;
+    }
+    30%{
+        background: rgb(251, 250, 252);
+        border-left: rgb(20, 8, 53) 5px solid;
+    }
+    40%{
+        background: rgb(231, 226, 233);
+        border-bottom: rgb(20, 8, 53) 5px solid;
+    }
+    50%{
+        background: rgb(215, 209, 241);
+        
+    }
+
+    100%{
+        background: rgb(240, 235, 238);
+        outline: none;
+        
+    }
+}
+*/
+
+/*----------------------social media-----------------*/
+
+
+.social-media{
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    height: 200px;
+    border-radius: 10px;
+    border: silver 1px dotted;
+    margin-right: 10px;
+    color: rgb(2, 2, 75);
+}
+.social-media h2{
+    font-size: 40px;
+    margin-left: 25px;
+}
+
+.social-media p{
+    margin-left: 50px;
+}
+/*----------------Recent changes------------*/
+
+.r-improve{
+    color: rgb(2, 2, 75);
+    margin-left: 65px;
+    margin-bottom: 45px;
+}
+.r-improve h2{
+    font-size: 30px;
+}
+.r-improve p{
+
+    color: rgb(2, 2, 75);
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+/*------------------Comment section---------------------*/
+
+.Leave-comment{
+    margin-left: 65px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Leave-comment H2{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: rgb(2, 2, 75);
+}
+
+.Leave-comment label{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.Leave-comment input{
+    outline:none;
+    border: none;
+    border-bottom: black 2px solid;
+    width: 200px;
+    margin-bottom: 20px;
+
+}
+
+.Leave-comment input:focus{
+
+    border-bottom: blue 2px solid;
+    font-size: 20px;
+    transition: all ease-out .2s;
+    
+}
+
+
+.Leave-comment button{
+    width: 100px;
+    background: rgb(119, 119, 221);
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+.Leave-comment button:hover{
+    background: blue;
+    transition: ease .5s;
+}
+
+.Leave-comment button::after{
+    background: rgb(119, 119, 221);
+    transition: all .5s ease-in-out linear;
+}
+
+.Leave-comment button:active{
+     
+    box-shadow: 0px 0px 0px 5px rgb(3, 3, 66);
+}
+
+/*-------------User comments container--------*/
+
+.user-comments-container{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    
+}
+.user-comments img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.user-comments{
+    display: flex;
+    flex-direction: row;
+    
+    width: 300px;
+    border: none;
+}
+
+.user-comments h2{
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 14px;
+}
+
+#userpara{
+    margin-top: 5px;
+    
+    
+    width: 300px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.comment-holder{
+    border: 1px silver solid;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.comment-holder:hover{
+    box-shadow: 1px 1px 5px 0px silver;
+}
+/*--------------8D PAGE--------------------------*/
+
+
+.m-second{
+
+    background:transparent;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    background-attachment: fixed;
+}
+.music-heading{
+
+    margin-top: 150px;
+    margin-left: 35px;
+    color: rgb(2, 2, 75);
+    display: flex;
+    flex-direction: row;
+    position:initial;
+    
+}
+#m1-logo{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#m2-logo{
+    margin-left: 20px;
+    margin-bottom: 2px;
+}
+
+h3#headphones-recommendation{
+    color: silver;
+    margin-left: 46px;
+    font-size: 15px;
+}
+
+.musicname{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: initial;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.musicname h4{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.musicname img{
+    margin-top: 8px;
+    border-radius: 50%;
+    margin-left: 120px;
+}
+
+.musicname a{
+    color: rgb(2, 2, 75);
+}
+
+.request-song h2{
+    margin-left: 40px;
+    color: rgb(2, 2, 75);
+    margin-bottom: 28px;
+
+}
+
+.request-song {
+    margin-left: 45px;
+    
+}
+
+.request-song label{
+    color: rgb(22, 21, 21);
+    font-family: sans-serif;
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+.request-song input{
+
+    outline:none;
+    border-bottom: blue 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 200px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.request-song input:focus{
+    font-size: 22px;
+    transition: all ease-out .2s;
+    width:200px;
+
+
+    
+}
+
+.btn-music{
+    width: 100px;
+    background: rgb(81, 19, 139);
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+.btn-music:hover{
+    background: blue;
+    transition: ease .5s;
+}
+
+.btn-music::after{
+    background: rgb(119, 119, 221);
+    transition: all .5s ease-in-out linear;
+}
+
+.btn-music:active{
+     
+    box-shadow: 0px 0px 0px 5px rgb(3, 3, 66);
+}
+
+/*----------Coming soon-----------*/
+.coming-soon{
+
+    color: rgb(2, 2, 75);
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+    justify-items: center;
+    margin-left: 450px;
+    margin-top: 200px;
+    font-size: 40px;
+}
+
+
+/*---------------------footer----------------------*/
+
+.footer{
+    background-color: rgb(22, 21, 21);
+    color: silver;
+   
+    height: 150px;
+
+}
+
+.footer p{
+text-align: center;
+padding-top: 40px;
+}
+
+#ftp{
+    padding-top: 5px;
+    text-align: left;
+    margin-left: 10px;
+    width: 220px;
+}
+.ft-elements{
+    display: flex;
+}
+.footer a{
+    width: max-content;
+    display: flex;
+    color: rgb(168, 156, 156);
+    
+} 
+
+.footer a:hover{
+    color: rgb(224, 214, 214);
+  visibility: visible;
+    transition: all .5s linear;
+
+}
+
+
+
+.footer a::before{
+    color: rgb(189, 178, 178);
+    transition: ease-out .5s linear;
+
+}
+
+
+.not{display: none;}
+
+/*----------------------Media queries -----------------*/
+
+@media (max-width:1200px){
+     .fullstructure{
+         display: none;
+     }
+
+     .footer{
+         display:none;
+     }
+
+     .not{
+         display: inline;
+         align-items: center;
+         color: black;
+         justify-content: center;
+         justify-items: center;
+         text-align: center;
+         margin-top: 40px;
+         position: relative;
+     }
+
+     .not h2{
+         font-size: 25px;
+         margin-top: 100px;
+         color:  rgb(2, 2, 75);
+     }
+}
